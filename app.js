@@ -44,12 +44,28 @@ app.get('/', (req, res) => {
 
 });
 
+// about route
+app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"About - Week 1"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
+
 // contact route
 app.get('/contact', (req, res) => {
     state={contact : true}
     head={title:"Contact - Week 1"}
     res.render('contact', { state, head});
     console.log('contact')
+  });
+
+  // location route
+app.get('/location', (req, res) => {
+    state={location : true}
+    head={title:"Location - Week 1"}
+    res.render('location', { state, head});
+    console.log('location')
   });
 
 
