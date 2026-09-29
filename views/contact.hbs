@@ -1,6 +1,67 @@
 <main>
-    <h1>Contact</h1>
-    <p>This is content on the contact page. Can you change it to give
-        your own contact deails. It has changed.
-        </p>
+
+    <section class="contact-page">
+
+        <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net/">
+
+            <h2>
+                Let me know what you need. Be sure to include your name and
+                email and I will get in touch as soon as possible.
+            </h2>
+
+            <br>
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                class="text-input"
+                placeholder="Full Name"
+                required
+            >
+
+            <br>
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="text-input"
+                placeholder="Email Address"
+                required
+            >
+
+            <br>
+
+            <label for="message">Feedback</label>
+            <textarea
+                id="message"
+                name="feed-back"
+                class="message"
+                placeholder="Comments or Questions..."
+            ></textarea>
+
+            <br>
+
+            <input
+                class="submit-button"
+                type="submit"
+                value="Send Feedback"
+            >
+
+        </form>
+
+    </section>
+
+    <!-- Contact info -->
+    <section id="Contact-info">
+        <div>
+            <h3>Phone & Email:</h3>
+            <h3>0870909932</h3>
+            <h3>CGCarpentry@gmail.com</h3>
+        </div>
+    </section>
+
 </main>
