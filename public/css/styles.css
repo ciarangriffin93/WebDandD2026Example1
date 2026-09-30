@@ -92,9 +92,6 @@ main {
     text-align: center;
 }
 
-
-/* Hero Text */
-
 .hero-content {
     color: white;
     padding: 30px;
@@ -153,9 +150,6 @@ main {
     line-height: 1.7;
 }
 
-/* ==============================
-   Services
-   ============================== */
 
 .services {
     text-align: center;
@@ -181,7 +175,6 @@ main {
     width: 200px;
     min-height: 130px;
     border-radius: 8px;
-
     box-shadow:
         0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -326,6 +319,29 @@ main {
     line-height: 1.5;
 }
 
+/* ==============================
+   Location Page
+   ============================== */
+
+.location-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.location-page h1 {
+    color: #5a3e2b;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 8px;
+}
 
 /* ==============================
    Footer
