@@ -68,6 +68,13 @@ app.get('/location', (req, res) => {
     console.log('location')
   });
 
+  // Gallery route
+app.get('/gallery', (req, res) => {
+    state={gallery : true}
+    head={title:"Gallery - CGCarpentry"}
+    res.render('gallery', { state, head});
+    console.log('gallery')
+  });
 
 // Start the server
 app.listen(3000, () => {
