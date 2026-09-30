@@ -188,6 +188,31 @@ main {
 }
 
 /* ==============================
+   Welcome Section
+   ============================== */
+
+.about-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    color: #5a3e2b;
+}
+
+.about-text p {
+    line-height: 1.7;
+}
+
+/* ==============================
    Contact Information
    ============================== */
 
