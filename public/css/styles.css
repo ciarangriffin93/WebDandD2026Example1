@@ -21,7 +21,6 @@ main {
     flex: 1;
 }
 
-
 /* ==============================
    Header
    ============================== */
@@ -67,7 +66,6 @@ main {
     color: white;
     background-color: #8b5e3c;
 }
-
 
 /* ==============================
    Hero Section
@@ -117,7 +115,6 @@ main {
     margin-bottom: 30px;
 }
 
-
 /* Hero Button */
 
 .hero-button {
@@ -133,7 +130,6 @@ main {
     background-color: white;
     color: #5a3e2b;
 }
-
 
 /* ==============================
    Welcome Section
@@ -156,7 +152,6 @@ main {
 #service-type p {
     line-height: 1.7;
 }
-
 
 /* ==============================
    Services
@@ -198,7 +193,6 @@ main {
 .service p {
     line-height: 1.5;
 }
-
 
 /* ==============================
    Contact Information
@@ -246,10 +240,6 @@ main {
 }
 
 
-/* ==============================
-   Contact Information
-   ============================== */
-
 #Contact-info {
     text-align: center;
     margin-top: 20px;
@@ -289,26 +279,51 @@ main {
 }
 
 /* ==============================
-    Gallery
-    ============================== */
+   Images / Gallery Page
+   ============================== */
+
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery h1 {
+    color: #5a3e2b;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
+.card .container {
+    padding: 20px;
+}
+
+.card h2 {
+    color: #5a3e2b;
+}
+
+.card p {
+    line-height: 1.5;
 }
 
 
