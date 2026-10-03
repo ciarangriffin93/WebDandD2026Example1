@@ -69,11 +69,11 @@ app.get('/location', (req, res) => {
   });
 
   // Gallery route
-app.get('/gallery', (req, res) => {
-    state = { gallery: true }
-    head = { title: "Gallery - CGCarpentry" }
-    res.render('gallery', { state, head });
-    console.log('gallery')
+app.get('/responsiveexample', (req, res) => {
+    state = {responsiveexample : true }
+    head = {title: "Responsiveexample - CGCarpentry" }
+    res.render('responsiveexample', { state, head });
+    console.log('responsiveexample')
 });
 
 // Start the server
