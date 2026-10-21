@@ -60,6 +60,14 @@ app.get('/contact', (req, res) => {
     console.log('contact')
   });
 
+  // contact route
+app.get('/signupform', (req, res) => {
+    state={contact : true}
+    head={title:"signup form - CGCarpentry"}
+    res.render('signupform', { state, head});
+    console.log('signupform')
+  });
+
   // location route
 app.get('/location', (req, res) => {
     state={location : true}
@@ -75,6 +83,16 @@ app.get('/responsiveexample', (req, res) => {
     res.render('responsiveexample', { state, head });
     console.log('responsiveexample')
 });
+
+    // values submitted
+app.get('/valuessubmitted', (req, res) => {
+    state={valuessubmited : true}
+    console.table(req.query);
+    //console.log(json.stringify(req.query));
+    head={title:"form values"} ;
+    res.render('valuessubmitted', { state, head, data: req.query });
+    console.log('valuessubmitted')
+  });
 
 // Start the server
 app.listen(3000, () => {
