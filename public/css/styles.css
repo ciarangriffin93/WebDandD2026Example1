@@ -339,6 +339,29 @@ main {
     line-height: 1.5;
 }
 
+/* Hamburger button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #222;
+}
+
+/* Navigation links */
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
 /* ==============================
    Location Page
    ============================== */
@@ -433,6 +456,40 @@ footer {
         line-height: 1.6;
         margin: 0;
     }
+
+    .site-header {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+        padding: 15px;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 12px;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -483,5 +540,34 @@ footer {
     .card p {
         font-size: 22px;
         line-height: 1.6;
+    }
+
+     .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+        padding: 15px;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 12px;
     }
 }
