@@ -1,5 +1,5 @@
 /* ==============================
-   General Page Styling
+   Page Styling
    ============================== */
 
 html,
@@ -74,9 +74,9 @@ main {
 #hero {
     min-height: 550px;
     background-image:
-    linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
         );
     background-size: cover;
     background-position: center;
@@ -145,6 +145,9 @@ main {
     line-height: 1.7;
 }
 
+/* ==============================
+   Services Section
+   ============================== */
 
 .services {
     text-align: center;
@@ -170,8 +173,7 @@ main {
     width: 200px;
     min-height: 130px;
     border-radius: 8px;
-    box-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service h3 {
@@ -183,7 +185,7 @@ main {
 }
 
 /* ==============================
-   Welcome Section
+   About Information
    ============================== */
 
 .about-information {
@@ -214,6 +216,8 @@ main {
 #Contact-info {
     text-align: center;
     padding: 50px 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 #Contact-info h2 {
@@ -221,13 +225,14 @@ main {
 }
 
 #Contact-info h3 {
-    margin-bottom: 5px;
+    margin: 3px 0;
 }
 
 #Contact-info p {
     margin-top: 0;
 }
 
+/* Contact Button */
 
 .contact-button {
     display: inline-block;
@@ -252,17 +257,6 @@ main {
     margin: 0 auto;
 }
 
-
-#Contact-info {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-#Contact-info h3 {
-    margin: 3px 0;
-}
-
 .text-input,
 .message {
     width: 100%;
@@ -276,6 +270,8 @@ main {
     min-height: 150px;
     resize: vertical;
 }
+
+/* Submit Button */
 
 .submit-button {
     display: inline-block;
@@ -318,6 +314,13 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Images inside picture elements */
+
+.card picture {
+    display: block;
+    width: 100%;
 }
 
 .card img {
@@ -370,52 +373,42 @@ main {
 footer {
     width: 100%;
     box-sizing: border-box;
-
     text-align: center;
-
     padding: 20px;
-
     background-color: #5a3e2b;
     color: white;
 }
 
 /* ==============================
-   Mobile
+   Tablet and Mobile
    ============================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+
+    /* Gallery */
 
     .gallery {
-        padding: 20px 0;
+        padding: 30px 20px;
     }
 
     .gallery h1 {
-        font-size: 36px;
-        margin-bottom: 30px;
+        font-size: 42px;
+        margin-bottom: 35px;
     }
 
     .card-container {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        width: 100%;
     }
 
     .card {
         width: 95%;
-        max-width: 380px;
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        max-width: 700px;
     }
 
     .card img {
-        width: 100%;
         height: 350px;
-        object-fit: cover;
-        display: block;
     }
 
     .card .container {
@@ -435,53 +428,38 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* ==============================
+   Small Mobile Screens
+   ============================== */
+
+@media screen and (max-width: 480px) {
 
     .gallery {
-        padding: 30px 20px;
+        padding: 20px 10px;
     }
 
     .gallery h1 {
-        font-size: 42px;
-        margin-bottom: 35px;
-    }
-
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        width: 100%;
+        font-size: 32px;
+        margin-bottom: 25px;
     }
 
     .card {
-        width: 95%;
-        max-width: 900px;
-        background-color: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+        width: 100%;
     }
 
     .card img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        display: block;
+        height: 250px;
     }
 
     .card .container {
-        padding: 35px;
+        padding: 20px 15px;
     }
 
     .card h2 {
-        font-size: 36px;
-        margin-top: 0;
-        margin-bottom: 15px;
+        font-size: 26px;
     }
 
     .card p {
-        font-size: 22px;
-        line-height: 1.6;
+        font-size: 16px;
     }
 }
