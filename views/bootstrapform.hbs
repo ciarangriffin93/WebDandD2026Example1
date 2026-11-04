@@ -1,0 +1,73 @@
+<h1>Holiday Booking Form without bootstrap</h1>
+
+<form action="#" method="get">
+
+    <!-- Input Box -->
+    <div class="mb-3 row">
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3 row">
+        <label for="password" class="form-label">Account Password:</label>
+        <input type="password" id="password" name="password" class="form-control">
+    </div>
+
+    <!-- Text Area -->
+    <div class="mb-3 row">
+        <label for="comments" class="form-label">Special Requests:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40" class="form-control"></textarea>
+    </div>
+    <!-- Checkboxes -->
+    <fieldset class="mb-3 row">
+        <legend>Extras</legend>
+        <div class="form-check">
+            <input type="checkbox" id="breakfast" name="extras" value="Breakfast" class="form-check-input">
+            <label for="breakfast" class="form-check-label">Breakfast Included</label>
+        </div>
+        <input type="checkbox" id="parking" name="extras" value="Parking" class="form-check-input">
+        <label for="parking" class="form-check-label">Parking Space</label>
+    </fieldset>
+
+    <!-- Radio Buttons -->
+    <fieldset class="mb-3 row">
+        <legend>Room Type</legend>
+
+        <input type="radio" id="single" name="room" value="Single">
+        <label for="single" class="form-label">Single Room</label>
+        <input type="radio" id="double" name="room" value="Double">
+        <label for="double" class="form-label">Double Room</label>
+
+        <input type="radio" id="family" name="room" value="Family" class="form-check-input">
+        <label for="family" class="form-check-label">Family Room</label>
+    </fieldset>
+
+    <!-- Select -->
+    <div class="mb-3 row">
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination">
+            <option value="">Choose a destination</option>
+            <option value="sligo">Sligo</option>
+            <option value="galway">Galway</option>
+            <option value="cork">Cork</option>
+            <option value="dublin">Dublin</option>
+        </select>
+    </div>
+
+
+    <!-- Multiple Select -->
+    <div class="mb-3 row">
+        <label for="activities">Activities (hold Ctrl/Cmd to select multiple):</label>
+        <select id="activities" name="activities" multiple size="4">
+            <option value="hiking">Hiking</option>
+            <option value="surfing">Surfing</option>
+            <option value="cycling">Cycling</option>
+            <option value="boat-trip">Boat Trip</option>
+        </select>
+    </div>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Book Holiday" class="mb-3 row">
+
+</form>

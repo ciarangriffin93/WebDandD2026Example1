@@ -456,6 +456,14 @@ main {
     background-color: #8b5e3c;
 }
 
+form {
+  width: min(100%, 600px);
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
 /* ==============================
    Footer
    ============================== */

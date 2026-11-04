@@ -84,6 +84,13 @@ app.get('/responsiveexample', (req, res) => {
     console.log('responsiveexample')
 });
 
+app.get('/bsform', (req, res) => {
+    state = {bsform : true }
+    head = {title: "Bootstrap Form - CGCarpentry" }
+    res.render('bootstrapform', { state, head });
+    console.log('bsform')
+});
+
     // values submitted
 app.get('/valuessubmitted', (req, res) => {
     state={valuessubmited : true}
